@@ -1,8 +1,8 @@
-\# SQL Homework — PostgreSQL Testing
+SQL Homework — PostgreSQL Testing
 
 
 
-\## About the Project
+\About the Project
 
 
 
@@ -10,7 +10,7 @@ This project demonstrates SQL table creation, database constraints, and automate
 
 
 
-\## Technologies
+\Technologies
 
 
 
@@ -24,7 +24,7 @@ This project demonstrates SQL table creation, database constraints, and automate
 
 
 
-\## Database Schema
+Database Schema
 
 
 
@@ -42,7 +42,7 @@ The schema uses primary keys, a foreign key, a unique constraint, and a GPA rang
 
 
 
-\## Automated Testing
+\ Automated Testing
 
 
 
@@ -54,7 +54,7 @@ The workflow checks that the SQL scripts execute successfully and that the requi
 
 
 
-\## Project Structure
+\Project Structure
 
 
 
@@ -82,7 +82,7 @@ SQL-homework/
 
 
 
-\## Learning Goals
+\ Learning Goals
 
 
 
