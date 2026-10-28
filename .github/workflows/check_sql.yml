@@ -42,3 +42,10 @@ jobs:
           psql -h localhost -U testuser -d testdb \
             -v ON_ERROR_STOP=1 \
             -f solution/homework.sql
+      - name: Run SQL tests
+        env:
+          PGPASSWORD: testpass
+        run: |
+          psql -h localhost -U testuser -d testdb \
+            -v ON_ERROR_STOP=1 \
+            -f tests/check_ddl.sql
