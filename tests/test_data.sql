@@ -1,15 +1,14 @@
 DO $$
+DECLARE
+    test_department_id INT;
 BEGIN
-    BEGIN
-        INSERT INTO departments (department_name)
-        VALUES ('Test Department');
+    INSERT INTO departments (department_name)
+    VALUES ('GPA Test Department')
+    RETURNING department_id INTO test_department_id;
 
+    BEGIN
         INSERT INTO students (student_name, gpa, department_id)
-        VALUES ('Test Student', 5.00, (
-            SELECT department_id
-            FROM departments
-            WHERE department_name = 'Test Department'
-        ));
+        VALUES ('Invalid GPA Student', 5.00, test_department_id);
 
         RAISE EXCEPTION 'Test failed: GPA 5.00 was accepted';
 
